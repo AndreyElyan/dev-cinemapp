@@ -25,6 +25,6 @@ export const FormContainer = styled.form`
   width: 100%;
 `;
 
-export const WrapperButton = styled.button`
+export const WrapperButton = styled.div`
   margin-left: 20px;
 `;

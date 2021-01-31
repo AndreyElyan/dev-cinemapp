@@ -1,9 +1,10 @@
+import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 import { simpleFlex } from '../../styles/mixins';
 
 export type TButton = {
-  children?: any;
+  children: string | ReactElement;
   width?: string;
   onClick?: any;
   type?: 'button' | 'submit' | 'reset' | undefined;

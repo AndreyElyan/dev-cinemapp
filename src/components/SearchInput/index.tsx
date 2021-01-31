@@ -29,6 +29,7 @@ const SearchInput: React.FC = () => {
           onChange={({ target: { value } }) => setSearch(value)}
           name="search"
           placeholder="Procurar filme:"
+          autoFocus
         />
 
         <WrapperButton>

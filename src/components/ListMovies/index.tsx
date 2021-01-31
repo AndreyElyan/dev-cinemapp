@@ -10,25 +10,23 @@ interface IProps {
   list: IMovieParsed[];
 }
 
-const ListMovies: React.FC<IProps> = ({ list }: IProps) => (
+const ListMovies: React.FC<IProps> = ({ list }: IProps) => (list.length ? (
   <Container>
-    {list.length
-      ? list.map(({
-        title, poster, type, year, imdbID,
-      }) => (
-        <ListItem
-          key={imdbID}
-          title={title}
-          poster={poster}
-          type={type}
-          year={year}
-          imdbID={imdbID}
-        />
-      ))
-      : (
-        <EmptyMessage>Nenhum filme encontradro ou pesquisado.</EmptyMessage>
-      )}
+    {list.map(({
+      title, poster, type, year, imdbID,
+    }) => (
+      <ListItem
+        key={imdbID}
+        title={title}
+        poster={poster}
+        type={type}
+        year={year}
+        imdbID={imdbID}
+      />
+    ))}
   </Container>
-);
+) : (
+  <EmptyMessage>Nenhum filme encontradro ou pesquisado.</EmptyMessage>
+));
 
 export default ListMovies;

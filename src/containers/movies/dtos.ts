@@ -6,11 +6,12 @@ export interface IMovieNotParsed {
   imdbID: string;
 }
 
-export interface IMovieParsed extends Pick<IMovieNotParsed, 'imdbID'> {
-  poster: string,
-  title: string,
-  type: string,
-  year: string,
+export interface IMovieParsed {
+  poster: string;
+  title: string;
+  type: string;
+  year: string;
+  imdbID: string;
 }
 
 export interface IState {
