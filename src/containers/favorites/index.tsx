@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, {
-  useState, useCallback, useContext, memo,
+  useState, useCallback, useContext, memo, useEffect,
 } from 'react';
 
 import changeState from 'helpers/changeState';
@@ -22,10 +22,10 @@ export const FavoritesContext = React.createContext<IData>({
   actions: actions({ data: initialState, changeState: changeState(() => {}) }),
 });
 
-export const useFavorites = () => useContext(FavoritesContext);
+export const useFavorites = (): IData => useContext(FavoritesContext);
 
 export default function withFavoritesProvider(WrappedComponent: React.FC): React.FC {
-  const WithFavorites = (props: any) => {
+  const WithFavorites = (props: object) => {
     const [data, setData] = useState(initialState);
 
     const value = useCallback(() => ({
@@ -35,7 +35,16 @@ export default function withFavoritesProvider(WrappedComponent: React.FC): React
 
     const dataValue: IData = value();
 
-    return null;
+    useEffect(() => {
+      dataValue.actions.loadFavorites();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    return (
+      <FavoritesContext.Provider value={dataValue}>
+        <WrappedComponent {...props} />
+      </FavoritesContext.Provider>
+    );
   };
 
   return memo(WithFavorites);

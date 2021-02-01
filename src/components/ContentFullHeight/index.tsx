@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import { Container } from './styles';
 
 interface IProps {
-  children: any
+  children: string | ReactElement;
 }
 
 const ContentFullHeight: React.FC<IProps> = ({

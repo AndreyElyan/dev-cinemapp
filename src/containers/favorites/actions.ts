@@ -25,7 +25,7 @@ export default ({ data: { list }, changeState }: IData): IActions => ({
     storage.setItem(keyStorage, newMovies);
   },
   loadFavorites: () => {
-    const favorites = storage.getItem(keyStorage);
+    const favorites = storage.getItem(keyStorage) || [];
     changeState({ label: 'list', value: favorites });
   },
 });

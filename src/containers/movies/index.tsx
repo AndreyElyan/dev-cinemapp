@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, {
   useState, useCallback, useContext, memo,
@@ -22,7 +23,7 @@ export const MoviesContext = React.createContext<IData>({
   actions: actions({ data: initialState, changeState: changeState(() => {}) }),
 });
 
-export const useMovies = () => useContext(MoviesContext);
+export const useMovies = (): IData => useContext(MoviesContext);
 
 export default function withMoviesProvider(WrappedComponent: React.FC): React.FC {
   const WithMovies = (props: any) => {

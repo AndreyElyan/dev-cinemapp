@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { memo } from 'react';
 
-// import favorites from './favorites';
+import favorites from './favorites';
 import movies from './movies';
 
-const listContainers = [movies];
+const listContainers = [movies, favorites];
 
-export default function containers(WrappedComponent: React.FC) {
-  const WithContainers = (props: any) => {
+export default function containers(WrappedComponent: React.FC): React.FC {
+  const WithContainers = (props: object) => {
     let CompleteComponent: any = null;
 
     listContainers.forEach((withContainer) => {

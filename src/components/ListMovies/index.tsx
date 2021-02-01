@@ -8,9 +8,10 @@ import { Container, EmptyMessage } from './styles';
 
 interface IProps {
   list: IMovieParsed[];
+  emptyMessage?: string;
 }
 
-const ListMovies: React.FC<IProps> = ({ list }: IProps) => (list.length ? (
+const ListMovies: React.FC<IProps> = ({ list, emptyMessage }: IProps) => (list.length ? (
   <Container>
     {list.map(({
       title, poster, type, year, imdbID,
@@ -26,7 +27,11 @@ const ListMovies: React.FC<IProps> = ({ list }: IProps) => (list.length ? (
     ))}
   </Container>
 ) : (
-  <EmptyMessage>Nenhum filme encontradro ou pesquisado.</EmptyMessage>
+  <EmptyMessage>{emptyMessage}</EmptyMessage>
 ));
+
+ListMovies.defaultProps = {
+  emptyMessage: 'Nenhum filme encontradro ou pesquisado.',
+};
 
 export default ListMovies;

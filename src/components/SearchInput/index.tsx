@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Button from 'components/Button';
 
@@ -10,11 +11,13 @@ import {
 
 const SearchInput: React.FC = () => {
   const { actions: { searchMovies } } = useMovies();
+  const history = useHistory();
 
   const [search, setSearch] = useState('');
 
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     e?.preventDefault();
+    history.push('');
 
     await searchMovies(search);
 

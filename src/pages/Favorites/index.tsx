@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { useFavorites } from 'containers/favorites';
 
-// import { Container } from './styles';
+import ListMovies from 'components/ListMovies';
+
+import { Container } from './styles';
 
 const Favorites: React.FC = () => {
-  const { data: { list }, actions: { loadFavorites } } = useFavorites();
-
-  useEffect(() => {
-    loadFavorites();
-  }, []);
+  const { data: { list } } = useFavorites();
 
   return (
-    <div>a</div>
+    <Container>
+      <ListMovies list={list} emptyMessage="Nenhum filme encontradro na categoria favoritos." />
+    </Container>
   );
 };
 
