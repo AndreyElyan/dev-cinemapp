@@ -30,7 +30,7 @@ const ListMovies: React.FC<IProps> = ({ list, emptyMessage }: IProps) =>
   );
 
 ListMovies.defaultProps = {
-  emptyMessage: 'Nenhum filme encontradro ou pesquisado.',
+  emptyMessage: 'Nenhum filme encontrado ou pesquisado.',
 };
 
 export default ListMovies;
