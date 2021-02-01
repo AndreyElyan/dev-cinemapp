@@ -15,7 +15,7 @@ const Favorites: React.FC = () => {
     <Container>
       <ListMovies
         list={list}
-        emptyMessage="Nenhum filme encontradro na categoria favoritos."
+        emptyMessage="Nenhum filme encontrado na categoria favoritos."
       />
     </Container>
   );
