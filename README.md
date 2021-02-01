@@ -10,6 +10,7 @@
 ```
 src
 |-- @types
+|-- assets
 |-- styles
 |-- components
 |-- containers
@@ -67,7 +68,7 @@ Directory to keep all `helpers` functions to share all over the project
 <br>
 
 # Published project
-> `https://sthima-cinemapp.netlify.app/`
+[https://sthima-cinemapp.netlify.app/](here)
 
 <br>
 
