@@ -68,7 +68,7 @@ Directory to keep all `helpers` functions to share all over the project
 <br>
 
 # Published project
-[https://sthima-cinemapp.netlify.app/](here)
+[here](https://sthima-cinemapp.netlify.app/)
 
 <br>
 
