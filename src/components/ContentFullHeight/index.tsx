@@ -6,8 +6,8 @@ interface IProps {
   children: string | ReactElement;
 }
 
-const ContentFullHeight: React.FC<IProps> = ({
-  children,
-}: IProps) => <Container>{children}</Container>;
+const ContentFullHeight: React.FC<IProps> = ({ children }: IProps) => (
+  <Container>{children}</Container>
+);
 
 export default ContentFullHeight;

@@ -8,10 +8,13 @@ export interface IDataChangeState {
 }
 
 export interface setDataType {
-  (data: string | number | null | undefined | object | [] | boolean): void
+  (data: string | number | null | undefined | object | [] | boolean): void;
 }
 
-export default (setData: SetStateAction<any>) => ({ label, value }: IDataChangeState): void => {
+export default (setData: SetStateAction<any>) => ({
+  label,
+  value,
+}: IDataChangeState): void => {
   setData((data: object) => ({
     ...data,
     [label]: value,

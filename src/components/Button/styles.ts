@@ -9,7 +9,7 @@ export type TButton = {
   width?: string;
   onClick?: any;
   type?: 'button' | 'submit' | 'reset' | undefined;
-}
+};
 
 export const ButtonStyles = styled.button<TButton>`
   ${simpleFlex};

@@ -1,35 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import Button from 'components/Button';
 
 import { useMovies } from 'containers/movies';
 
-import {
-  Container, InputStyles, FormContainer, WrapperButton,
-} from './styles';
+import { Container, InputStyles, FormContainer, WrapperButton } from './styles';
 
 const SearchInput: React.FC = () => {
-  const { actions: { searchMovies } } = useMovies();
+  const {
+    data: { search, pagination },
+    actions: { searchMovies, setSearch },
+  } = useMovies();
   const history = useHistory();
 
-  const [search, setSearch] = useState('');
+  const [searchInput, setSearchInput] = useState('');
 
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     e?.preventDefault();
     history.push('');
 
-    await searchMovies(search);
-
-    setSearch('');
+    await setSearch(searchInput);
   };
+
+  useEffect(() => {
+    searchMovies();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pagination.page, search]);
 
   return (
     <Container>
       <FormContainer onSubmit={handleSubmit}>
         <InputStyles
-          value={search}
-          onChange={({ target: { value } }) => setSearch(value)}
+          value={searchInput}
+          onChange={({ target: { value } }) => setSearchInput(value)}
           name="search"
           placeholder="Procurar filme:"
           autoFocus

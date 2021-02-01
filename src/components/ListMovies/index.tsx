@@ -11,24 +11,23 @@ interface IProps {
   emptyMessage?: string;
 }
 
-const ListMovies: React.FC<IProps> = ({ list, emptyMessage }: IProps) => (list.length ? (
-  <Container>
-    {list.map(({
-      title, poster, type, year, imdbID,
-    }) => (
-      <ListItem
-        key={imdbID}
-        title={title}
-        poster={poster}
-        type={type}
-        year={year}
-        imdbID={imdbID}
-      />
-    ))}
-  </Container>
-) : (
-  <EmptyMessage>{emptyMessage}</EmptyMessage>
-));
+const ListMovies: React.FC<IProps> = ({ list, emptyMessage }: IProps) =>
+  list.length ? (
+    <Container>
+      {list.map(({ title, poster, type, year, imdbID }) => (
+        <ListItem
+          key={imdbID}
+          title={title}
+          poster={poster}
+          type={type}
+          year={year}
+          imdbID={imdbID}
+        />
+      ))}
+    </Container>
+  ) : (
+    <EmptyMessage>{emptyMessage}</EmptyMessage>
+  );
 
 ListMovies.defaultProps = {
   emptyMessage: 'Nenhum filme encontradro ou pesquisado.',

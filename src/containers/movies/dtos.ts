@@ -15,11 +15,18 @@ export interface IMovieParsed {
 }
 
 export interface IState {
-  loading: boolean
+  loading: boolean;
   error: null | string;
   list: IMovieParsed[];
+  search: string;
+  pagination: {
+    page: number;
+    pages: number;
+  };
 }
 
 export interface IActions {
-  searchMovies(search: string): void;
+  searchMovies(): void;
+  setSearch(search: string): void;
+  changePage(page: number): void;
 }

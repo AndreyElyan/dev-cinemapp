@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import noPoster from 'assets/no-poster.png';
 
 import { Container } from './styles';
 
@@ -9,17 +11,20 @@ interface IProps {
   alt: string;
 }
 
-const Image: React.FC<IProps> = ({
-  src, width, height, alt,
-}: IProps) => (
-  <Container
-    loading="lazy"
-    src={src}
-    width={width}
-    height={height}
-    alt={alt}
-  />
-);
+const Image: React.FC<IProps> = ({ src, width, height, alt }: IProps) => {
+  const [error, setError] = useState(false);
+
+  return (
+    <Container
+      loading="lazy"
+      src={error ? noPoster : src}
+      width={width}
+      height={height}
+      alt={alt}
+      onError={() => setError(true)}
+    />
+  );
+};
 
 Image.defaultProps = {
   width: 'auto',

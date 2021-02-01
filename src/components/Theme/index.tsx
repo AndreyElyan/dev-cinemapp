@@ -8,9 +8,7 @@ interface ITheme {
 }
 
 const Theme: React.FC<ITheme> = ({ children }: ITheme) => (
-  <ThemeProvider theme={theme}>
-    {children}
-  </ThemeProvider>
+  <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 
 export default Theme;

@@ -11,7 +11,7 @@ const api = axios.create({
   params: { apikey: process.env.REACT_APP_OMDB_API_KEY },
 });
 
-api.interceptors.request.use((config) => config);
+api.interceptors.request.use(config => config);
 
 api.interceptors.response.use(successResponse, errorResponse);
 

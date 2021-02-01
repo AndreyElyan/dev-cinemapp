@@ -8,17 +8,22 @@ import Button from 'components/Button';
 import { useFavorites } from 'containers/favorites';
 
 import {
-  Container, WrapperContent, WrapperImage, ValueText, ButtonWrapper,
+  Container,
+  WrapperContent,
+  WrapperImage,
+  ValueText,
+  ButtonWrapper,
 } from './styles';
 
 const ListItem: React.FC<IMovieParsed> = (data: IMovieParsed) => {
-  const { data: { list }, actions: { setFavorite, removeFavorite } } = useFavorites();
-
   const {
-    title, poster, type, year, imdbID,
-  } = data;
+    data: { list },
+    actions: { setFavorite, removeFavorite },
+  } = useFavorites();
 
-  const isFavorite = list.findIndex((item) => item.imdbID === imdbID) !== -1;
+  const { title, poster, type, year, imdbID } = data;
+
+  const isFavorite = list.findIndex(item => item.imdbID === imdbID) !== -1;
 
   return (
     <Container>
@@ -35,7 +40,11 @@ const ListItem: React.FC<IMovieParsed> = (data: IMovieParsed) => {
 
         <ButtonWrapper>
           <Button
-            onClick={isFavorite ? () => removeFavorite(imdbID) : () => setFavorite(data)}
+            onClick={
+              isFavorite
+                ? () => removeFavorite(imdbID)
+                : () => setFavorite(data)
+            }
           >
             {isFavorite ? 'Desfavoritar' : 'Favoritar'}
           </Button>

@@ -11,7 +11,7 @@ export default function containers(WrappedComponent: React.FC): React.FC {
   const WithContainers = (props: object) => {
     let CompleteComponent: any = null;
 
-    listContainers.forEach((withContainer) => {
+    listContainers.forEach(withContainer => {
       CompleteComponent = withContainer(CompleteComponent || WrappedComponent);
     });
 

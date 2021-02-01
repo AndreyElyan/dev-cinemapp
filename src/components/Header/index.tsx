@@ -7,11 +7,15 @@ import { HeaderStyles, HeaderContainer, LinkStyle } from './styles';
 const Header: React.FC = () => (
   <HeaderStyles>
     <HeaderContainer>
-      <LinkStyle to="/" exact>Home</LinkStyle>
+      <LinkStyle to="/" exact>
+        Home
+      </LinkStyle>
 
       <SearchInput />
 
-      <LinkStyle to="/favorites" exact>Favoritos</LinkStyle>
+      <LinkStyle to="/favorites" exact>
+        Favoritos
+      </LinkStyle>
     </HeaderContainer>
   </HeaderStyles>
 );

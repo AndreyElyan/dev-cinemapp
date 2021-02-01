@@ -6,6 +6,8 @@ interface IProps {
   children: ReactElement | string;
 }
 
-const ErrorMessage: React.FC<IProps> = ({ children }: IProps) => <Container>{children}</Container>;
+const ErrorMessage: React.FC<IProps> = ({ children }: IProps) => (
+  <Container>{children}</Container>
+);
 
 export default ErrorMessage;

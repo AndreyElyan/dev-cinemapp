@@ -30,6 +30,7 @@ export const WrapperContent = styled.div`
   ${simpleFlex};
   flex-direction: column;
   flex: 1;
+  margin-top: ${({ theme }) => theme.base.margin}px;
 `;
 
 export const WrapperImage = styled.div`
@@ -39,7 +40,6 @@ export const WrapperImage = styled.div`
 
   img {
     height: 400px;
-    margin-bottom: ${({ theme }) => theme.base.margin}px;
   }
 `;
 
