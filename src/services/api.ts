@@ -2,7 +2,9 @@ import axios, { AxiosError, AxiosResponse } from 'axios';
 
 const successResponse = ({ data }: AxiosResponse) => data;
 
-const errorResponse = ({ response }: AxiosError) => response;
+const errorResponse = ({ response }: AxiosError) => {
+  throw response;
+};
 
 const api = axios.create({
   baseURL: process.env.REACT_APP_OMDB_API,
