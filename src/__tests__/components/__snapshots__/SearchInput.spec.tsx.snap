@@ -1,284 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home page must render with data 1`] = `
+exports[`SearchInput component should render with data 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-crrsfI kGCCBt"
+        class="sc-gsTCUz cFBDnh"
       >
-        <ul
-          class="sc-iBPRYJ hTrWtQ"
+        <form
+          class="sc-hKgILt eUYnaq"
         >
-          <li
-            class="sc-dlfnbm bUjLwp"
-          >
-            <div
-              class="sc-eCssSg jGwyws"
-            >
-              <img
-                alt="a"
-                class="sc-bdfBwQ fOwJSn"
-                height="auto"
-                loading="lazy"
-                src="a"
-                width="auto"
-              />
-            </div>
-            <div
-              class="sc-hKgILt hRElaA"
-            >
-              <strong
-                class="sc-jSgupP hsPGzo"
-              >
-                a
-              </strong>
-              <strong
-                class="sc-jSgupP hsPGzo"
-              >
-                a
-              </strong>
-              <strong
-                class="sc-jSgupP hsPGzo"
-              >
-                1960
-              </strong>
-              <div
-                class="sc-gKsewC bzJbYR"
-              >
-                <button
-                  class="sc-gsTCUz YPPtJ"
-                  type="submit"
-                >
-                  Favoritar
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-crrsfI kGCCBt"
-    >
-      <ul
-        class="sc-iBPRYJ hTrWtQ"
-      >
-        <li
-          class="sc-dlfnbm bUjLwp"
-        >
-          <div
-            class="sc-eCssSg jGwyws"
-          >
-            <img
-              alt="a"
-              class="sc-bdfBwQ fOwJSn"
-              height="auto"
-              loading="lazy"
-              src="a"
-              width="auto"
-            />
-          </div>
-          <div
-            class="sc-hKgILt hRElaA"
-          >
-            <strong
-              class="sc-jSgupP hsPGzo"
-            >
-              a
-            </strong>
-            <strong
-              class="sc-jSgupP hsPGzo"
-            >
-              a
-            </strong>
-            <strong
-              class="sc-jSgupP hsPGzo"
-            >
-              1960
-            </strong>
-            <div
-              class="sc-gKsewC bzJbYR"
-            >
-              <button
-                class="sc-gsTCUz YPPtJ"
-                type="submit"
-              >
-                Favoritar
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Home page must render with error 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="sc-crrsfI kGCCBt"
-      >
-        <h2
-          class="sc-pFZIQ MHAsa"
-        >
-          Ocorreu um erro inesperado!
-        </h2>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-crrsfI kGCCBt"
-    >
-      <h2
-        class="sc-pFZIQ MHAsa"
-      >
-        Ocorreu um erro inesperado!
-      </h2>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Home page must render with loading 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="sc-crrsfI kGCCBt"
-      >
-        <div
-          class="sc-jrAGrp fQomGs"
-        >
-          <div
-            class="sc-kEjbxe fDnvCa"
+          <input
+            class="sc-dlfnbm kfjwkP"
+            name="search"
+            placeholder="Procurar filme:"
+            value=""
           />
-        </div>
+          <div
+            class="sc-eCssSg cpdRld"
+          >
+            <button
+              class="sc-bdfBwQ icQKIE"
+              type="submit"
+              width="90px"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-crrsfI kGCCBt"
+      class="sc-gsTCUz cFBDnh"
     >
-      <div
-        class="sc-jrAGrp fQomGs"
+      <form
+        class="sc-hKgILt eUYnaq"
       >
-        <div
-          class="sc-kEjbxe fDnvCa"
+        <input
+          class="sc-dlfnbm kfjwkP"
+          name="search"
+          placeholder="Procurar filme:"
+          value=""
         />
-      </div>
+        <div
+          class="sc-eCssSg cpdRld"
+        >
+          <button
+            class="sc-bdfBwQ icQKIE"
+            type="submit"
+            width="90px"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
     </div>
   </div>,
   "debug": [Function],
@@ -335,31 +113,289 @@ Object {
 }
 `;
 
-exports[`Home page should render without data 1`] = `
+exports[`SearchInput component should render without data 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-crrsfI kGCCBt"
+        class="sc-gsTCUz cFBDnh"
       >
-        <h2
-          class="sc-fubCfw boTXqA"
+        <form
+          class="sc-hKgILt eUYnaq"
         >
-          Nenhum filme encontrado ou pesquisado.
-        </h2>
+          <input
+            class="sc-dlfnbm kfjwkP"
+            name="search"
+            placeholder="Procurar filme:"
+            value=""
+          />
+          <div
+            class="sc-eCssSg cpdRld"
+          >
+            <button
+              class="sc-bdfBwQ icQKIE"
+              type="submit"
+              width="90px"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-crrsfI kGCCBt"
+      class="sc-gsTCUz cFBDnh"
     >
-      <h2
-        class="sc-fubCfw boTXqA"
+      <form
+        class="sc-hKgILt eUYnaq"
       >
-        Nenhum filme encontrado ou pesquisado.
-      </h2>
+        <input
+          class="sc-dlfnbm kfjwkP"
+          name="search"
+          placeholder="Procurar filme:"
+          value=""
+        />
+        <div
+          class="sc-eCssSg cpdRld"
+        >
+          <button
+            class="sc-bdfBwQ icQKIE"
+            type="submit"
+            width="90px"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SearchInput component should render witht data and change search text 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-gsTCUz cFBDnh"
+      >
+        <form
+          class="sc-hKgILt eUYnaq"
+        >
+          <input
+            class="sc-dlfnbm kfjwkP"
+            name="search"
+            placeholder="Procurar filme:"
+            value="Superman"
+          />
+          <div
+            class="sc-eCssSg cpdRld"
+          >
+            <button
+              class="sc-bdfBwQ icQKIE"
+              type="submit"
+              width="90px"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-gsTCUz cFBDnh"
+    >
+      <form
+        class="sc-hKgILt eUYnaq"
+      >
+        <input
+          class="sc-dlfnbm kfjwkP"
+          name="search"
+          placeholder="Procurar filme:"
+          value="Superman"
+        />
+        <div
+          class="sc-eCssSg cpdRld"
+        >
+          <button
+            class="sc-bdfBwQ icQKIE"
+            type="submit"
+            width="90px"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SearchInput component should render witht data and change search text and submit search 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-gsTCUz cFBDnh"
+      >
+        <form
+          class="sc-hKgILt eUYnaq"
+        >
+          <input
+            class="sc-dlfnbm kfjwkP"
+            name="search"
+            placeholder="Procurar filme:"
+            value="Superman"
+          />
+          <div
+            class="sc-eCssSg cpdRld"
+          >
+            <button
+              class="sc-bdfBwQ icQKIE"
+              type="submit"
+              width="90px"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-gsTCUz cFBDnh"
+    >
+      <form
+        class="sc-hKgILt eUYnaq"
+      >
+        <input
+          class="sc-dlfnbm kfjwkP"
+          name="search"
+          placeholder="Procurar filme:"
+          value="Superman"
+        />
+        <div
+          class="sc-eCssSg cpdRld"
+        >
+          <button
+            class="sc-bdfBwQ icQKIE"
+            type="submit"
+            width="90px"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
     </div>
   </div>,
   "debug": [Function],

@@ -30,9 +30,10 @@ export const useFavorites = (): IData => useContext(FavoritesContext);
 
 export default function withFavoritesProvider(
   WrappedComponent: React.FC,
+  state: IState = initialState,
 ): React.FC {
   const WithFavorites = (props: object) => {
-    const [data, setData] = useState(initialState);
+    const [data, setData] = useState(state);
 
     const value = useCallback(
       () => ({

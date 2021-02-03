@@ -13,7 +13,7 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     text-decoration: none;
-    outline-color:  ${({ theme }) => theme.colors.secondary};
+    outline-color:  ${({ theme }) => theme?.colors?.secondary};
   }
 
   html, body, #root {
@@ -28,7 +28,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility !important;
     font-family: 'Montserrat', sans-serif;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme?.colors?.primary};
     color: #fff;
   }
 

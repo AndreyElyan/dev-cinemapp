@@ -21,6 +21,6 @@ export const LoaderStyles = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border-top: 1px solid ${({ theme }) => theme.colors.secondary};
+  border-top: 1px solid ${({ theme }) => theme?.colors?.secondary};
   animation: ${rotate} 1s linear infinite;
 `;

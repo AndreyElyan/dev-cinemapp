@@ -6,13 +6,13 @@ export const Container = styled.li`
   ${simpleFlex};
   flex-direction: column;
 
-  padding: ${({ theme }) => theme.base.padding}px;
+  padding: ${({ theme }) => theme?.base?.padding}px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: ${({ theme }) => theme.base.radius * 2}px;
+  border-radius: ${({ theme }) => theme?.base?.radius * 2}px;
   transition: 0.2s box-shadow;
 
   & + & {
-    margin-top: ${({ theme }) => theme.base.margin}px;
+    margin-top: ${({ theme }) => theme?.base?.margin}px;
   }
 
   &:hover {
@@ -30,7 +30,7 @@ export const WrapperContent = styled.div`
   ${simpleFlex};
   flex-direction: column;
   flex: 1;
-  margin-top: ${({ theme }) => theme.base.margin}px;
+  margin-top: ${({ theme }) => theme?.base?.margin}px;
 `;
 
 export const WrapperImage = styled.div`
@@ -48,5 +48,5 @@ export const ValueText = styled.strong`
 `;
 
 export const ButtonWrapper = styled.div`
-  margin-top: ${({ theme }) => theme.base.margin * 2}px;
+  margin-top: ${({ theme }) => theme?.base?.margin * 2}px;
 `;

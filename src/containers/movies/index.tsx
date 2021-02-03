@@ -32,9 +32,10 @@ export const useMovies = (): IData => useContext(MoviesContext);
 
 export default function withMoviesProvider(
   WrappedComponent: React.FC,
+  state: IState = initialState,
 ): React.FC {
   const WithMovies = (props: any) => {
-    const [data, setData] = useState(initialState);
+    const [data, setData] = useState(state);
 
     const value = useCallback(
       () => ({

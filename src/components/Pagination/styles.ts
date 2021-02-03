@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { simpleFlex } from 'styles/mixins';
 
 export const Container = styled.div`
-  margin-top: ${({ theme }) => theme.base.margin * 3}px;
+  margin-top: ${({ theme }) => theme?.base?.margin * 3}px;
 
   ul {
     ${simpleFlex};
@@ -14,7 +14,7 @@ export const Container = styled.div`
       font-weight: bold;
 
       &.selected {
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme?.colors?.secondary};
         cursor: initial;
       }
 
@@ -26,13 +26,13 @@ export const Container = styled.div`
       a {
         display: block;
         padding: ${({ theme }) =>
-          `${theme.base.padding / 2}px ${theme.base.padding}px`};
+          `${theme?.base?.padding / 2}px ${theme?.base?.padding}px`};
       }
 
       &.previous,
       &.next {
-        background-color: ${({ theme }) => theme.colors.secondary};
-        border-radius: ${({ theme }) => theme.base.radius}px;
+        background-color: ${({ theme }) => theme?.colors?.secondary};
+        border-radius: ${({ theme }) => theme?.base?.radius}px;
         transition: 0.2s opacity;
 
         &:hover {

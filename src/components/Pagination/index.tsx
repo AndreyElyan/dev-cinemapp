@@ -18,6 +18,8 @@ const Pagination: React.FC<IProps> = ({ page, pages, onChange }: IProps) => {
         pageRangeDisplayed={5}
         initialPage={page}
         onPageChange={value => onChange(value.selected)}
+        nextLabel="Próximo"
+        previousLabel="Anterior"
       />
     </Container>
   ) : (

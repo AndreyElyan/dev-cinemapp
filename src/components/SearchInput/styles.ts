@@ -15,7 +15,7 @@ export const InputStyles = styled.input`
   background: transparent;
   border: 0;
   padding-left: 10px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme?.colors?.white};
   font-size: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 `;
